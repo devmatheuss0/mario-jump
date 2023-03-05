@@ -57,16 +57,60 @@ body{
   width: 80px;
   animation: pipe-animation 2.5s infinite linear;
 }
-
+.pipe1{
+  position: absolute;
+  bottom: 0;
+  width: 80px;
+  height: 100px;
+  animation: pipe1-animation 2.5s infinite linear;
+  animation-delay: 4s;
+  right: -80px;
+  
+}
+.pipe2{
+  position: absolute;
+  bottom: 0;
+  width: 80px;
+  height: 100px;
+  animation: pipe2-animation 2.5s infinite linear;
+  animation-delay: 8s;
+  right: -80px;
+}
 @keyframes pipe-animation{
   from{
     right: -80px;
+  
+  }
+  to{
+    right: 100%;
+    
+  }
+}
+@keyframes pipe1-animation{
+  0%{
+    display: none;
+  }
+  from{
+    right: -80px;
+    display: flex;
 
   }
   to{
     right: 100%;
+    display: flex;
   }
 }
+@keyframes pipe2-animation{
+  from{
+    right: -80px;
+  
+  }
+  to{
+    right: 100%;
+    
+  }
+}
+
 
 .mario{
   position: absolute;
@@ -110,13 +154,19 @@ to{
   right: 100%;
 }
 }
+.loop{
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+  color: rgb(0, 0, 0);
+}
 @media only screen and (max-width: 1200px){
   .container{
     margin-left: 5.5em;
   }
   
   .pipe{
-    animation: pipe-animation 2.5s infinite linear;
+    animation: pipe-animation 2s infinite linear;
     width: 80px;
   }
   @keyframes pipe-animation{
@@ -214,13 +264,28 @@ to{
 }
 @media only screen and (max-width: 450px ){
   .container{
-    margin-left: 2rem;
+    margin-left: 3rem;
   }
   .pipe{
-    animation: pipe-animation 2.5s infinite linear;
+    animation: pipe-animation 1s infinite linear;
     width: 
     70px;
   }
+  .pipe1{
+    animation: pipe1-animation 1s infinite linear;
+    width: 
+    70px;
+    height: 60px;
+    animation-delay: 4s;
+  }
+  .pipe2{
+    animation: pipe2-animation 1s infinite linear;
+    width: 
+    70px;
+    height: 60px;
+    animation-delay: 8s;
+  }
+
   .game-over{
     display: none;
     justify-content: center;
@@ -259,10 +324,10 @@ to{
 }
 @media only screen and (max-width: 300px ){
   .container{
-    margin-left: 2rem;
+    margin-left: 5rem;
   }
   .pipe{
-    animation: pipe-animation 2.5s infinite linear;
+    animation: pipe-animation 8s infinite linear;
     width: 
     70px;
   }
