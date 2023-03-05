@@ -35,7 +35,7 @@ const loop = setInterval(() =>{
     mario.style.animation = 'none'
     mario.style.bottom = `${marioPosition}px`
 
-    mario.src = './img/Mario_Death.png'
+    mario.src = 'Mario_Death.png'
     mario.style.width = '75px'
     mario.style.marginLeft = '50px'
 
@@ -58,7 +58,7 @@ const loop = setInterval(() =>{
     mario.style.animation = 'none'
     mario.style.bottom = `${marioPosition}px`
 
-    mario.src = './img/Mario_Death.png'
+    mario.src = 'Mario_Death.png'
     mario.style.width = '75px'
     mario.style.marginLeft = '50px'
 
@@ -80,7 +80,7 @@ const loop = setInterval(() =>{
     mario.style.animation = 'none'
     mario.style.bottom = `${marioPosition}px`
 
-    mario.src = './img/Mario_Death.png'
+    mario.src = 'Mario_Death.png'
     mario.style.width = '75px'
     mario.style.marginLeft = '50px'
 
