@@ -8,7 +8,7 @@
 body{
   background: #333;
   width: 100vw;
-  height: 100vh;
+ 
 }
 .container{
   width: 80vw;
@@ -135,7 +135,8 @@ to{
   }
   .pipe{
     animation: pipe-animation 1.7s infinite ease-out;
-    width: 80px;
+    width: 
+    80px;
   }
   @keyframes pipe-animation{
     from{
@@ -144,6 +145,26 @@ to{
     }
     to{
       right: 100%;
+    }
+  }
+  @keyframes jump{
+    0%{
+      bottom: 0;
+    }
+    40%{
+      bottom:180px;
+    }
+    50%{
+      bottom: 180px;
+    }
+    60%{
+      bottom: 180px;
+    }
+    70%{
+      bottom: 180px;
+    }
+    100%{
+      bottom: 0;
     }
   }
 }
@@ -152,7 +173,14 @@ to{
     margin: 3em;
   }
   .pipe{
-    animation: pipe-animation 1.5s infinite ease-out;
+    width: 70px;
+    animation: pipe-animation 1.7s infinite ease-out;
+  }
+  .game-over{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
   @keyframes pipe-animation{
     from{
@@ -161,6 +189,26 @@ to{
     }
     to{
       right: 100%;
+    }
+  }
+  @keyframes jump{
+    0%{
+      bottom: 0;
+    }
+    40%{
+      bottom:180px;
+    }
+    50%{
+      bottom: 180px;
+    }
+    60%{
+      bottom: 180px;
+    }
+    70%{
+      bottom: 180px;
+    }
+    100%{
+      bottom: 0;
     }
   }
 }
