@@ -259,10 +259,10 @@ to{
 }
 @media only screen and (max-width: 300px ){
   .container{
-    margin-left: 5rem;
+    margin-left: 2rem;
   }
   .pipe{
-    animation: pipe-animation 8s infinite linear;
+    animation: pipe-animation 2.5s infinite linear;
     width: 
     70px;
   }
