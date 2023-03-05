@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Press Start 2P', cursive;
+}
+body{
+  background: linear-gradient(#87CEEB, #E0F6FF);
+  width: 100vw;
+  height: 100vh;
+}
+.container{
+  width: 80vw;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10rem;
+  margin-top: 5rem;
+  flex-direction: column;
+}
+.continue button{
+  margin-top: 5rem;
+  width: 100%;
+  padding: 20px;
+  border-radius: 30px;
+  border: none;
+  box-shadow: 5px 10px 10px 10px rgba(0, 0, 0, 0.212);
+  cursor: pointer;
+  background: linear-gradient(#87CEEB, #E0F6FF, #239228);
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+}
+.game-over{
+  display: none;
+  justify-content: center;
+  align-items: center;
+  margin-top: 260px;
+  font-size: 40px;
+  color: rgb(255, 11, 3);
+}
+.game-board{
+  width: 100%;
+  height: 500px;
+  border-bottom: 20px solid #239228;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 30px;
+  box-shadow: 1px 15px 17px 20px rgba(0, 0, 0, 0.384);
+  background: linear-gradient(#87CEEB, #E0F6FF)
+}
+.pipe{
+  position: absolute;
+  bottom: 0;
+  width: 80px;
+  animation: pipe-animation 2.5s infinite linear;
+}
+
+@keyframes pipe-animation{
+  from{
+    right: -80px;
+
+  }
+  to{
+    right: 100%;
+  }
+}
+
+.mario{
+  position: absolute;
+  bottom: 0;
+  width: 150px;
+}
+.jump{
+  animation: jump 500ms ease-out;
+}
+@keyframes jump{
+  0%{
+    bottom: 0;
+  }
+  40%{
+    bottom:180px;
+  }
+  50%{
+    bottom: 180px;
+  }
+  60%{
+    bottom: 180px;
+  }
+  100%{
+    bottom: 0;
+  }
+}
+.nuvem{
+  position: absolute;
+  margin-top: 30px ;
+  width: 500px; 
+  animation: nuvem 18s infinite;
+  
+}
+@keyframes nuvem{
+
+from{
+  right: -500px;
+
+}
+to{
+  right: 100%;
+}
+}
+@media only screen and (max-width: 1200px){
+  .container{
+    margin-left: 5.5em;
+  }
+  
+  .pipe{
+    animation: pipe-animation 2s infinite ease-out;
+    width: 80px;
+  }
+  @keyframes pipe-animation{
+    from{
+      right: -880px;
+  
+    }
+    to{
+      right: 100%;
+    }
+  }
+}
+@media only screen and (max-width: 900px){
+  .container{
+    margin-left: 5rem;
+  }
+  .pipe{
+    animation: pipe-animation 1.7s infinite ease-out;
+    width: 80px;
+  }
+  @keyframes pipe-animation{
+    from{
+      right: -920px;
+  
+    }
+    to{
+      right: 100%;
+    }
+  }
+}
+  @media only screen and (max-width: 600px){
+  .container{
+    margin: 3em;
+  }
+  .pipe{
+    animation: pipe-animation 1.5s infinite ease-out;
+  }
+  @keyframes pipe-animation{
+    from{
+      right: -920px;
+  
+    }
+    to{
+      right: 100%;
+    }
+  }
+}
